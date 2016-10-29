@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DNA tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      h1, h5, button, input, select {
+      font-family: "Lucida Console", Monaco, monospace;
+      }
+      #optionList {
+      width: 85%;
+      float: left;
+      border-color: white;
+      }
+      #btn1 {
+      width: 15%;
+      border-right-style: none;
+      border-color: white;
+      }
+      #seq {
+      border-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 align="center">DNA tool</h1>
+      <form class="form-horizontal" autocomplete="off">
+        <div class = "panel panel-primary">
+          <div class = "panel-heading">
+            <h5 class = "panel-title">Your sequence</h5>
+          </div>
+          <input type="text" class="form-control" id="seq" placeholder="Type your sequence">
+        </div>
+        <div class = "panel panel-primary">
+          <div class = "panel-heading">
+            <h5 class = "panel-title">Your choice</h5>
+          </div>
+          <select class="form-control" id="optionList">
+            <option value="reverse">reverse</option>
+            <option value="complementary">complementary</option>
+            <option value="reverse complementary">reverse complementary</option>
+          </select>
+          <div>
+            <button type="submit" class="btn btn-default" id="btn1"><span class="glyphicon glyphicon-ok"></span></button>
+          </div>
+        </div>
+        <div class = "panel panel-primary">
+          <div class = "panel-heading">
+            <h5 class = "panel-title">Your sequence after modification</h5>
+          </div>
+          <div class = "panel-body" id="result"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
