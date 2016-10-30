@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $("button").on("click", function(z) {
         z.preventDefault();
-        var e = document.getElementById("optionList");
+        var e = document.getElementById("option-list");
         var selected = e.options[e.selectedIndex].value;
         var inputValue = $("#seq").val();
         var str = '';
